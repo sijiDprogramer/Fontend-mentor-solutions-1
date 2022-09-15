@@ -1,0 +1,132 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/* font-family: 'Montserrat', sans-serif;
+font-family:'Fraunces',  serif; */
+body{
+  background: hsl(30, 38%, 92%);
+  Font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+}
+.BOX{
+  margin:30px auto;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+}
+.img img{
+  max-width: 100%;
+  display: inherit;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width:700px;
+  background-color:  #ffffff;
+  border-radius: 15px;
+  overflow:hidden;
+}
+.card{
+  padding: 35px;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+.preview{
+ text-transform: uppercase;
+ letter-spacing: 3px;
+ font-size: 13px;
+ font-weight: 500;
+ color:  hsl(228, 12%, 48%);
+}
+.name{
+  color:  hsl(212, 21%, 14%);
+  font-family:'Fraunces',  serif;
+  font-size: 34px;
+  line-height: 1em;
+}
+.description{
+  line-height: 1.6em;
+  color: hsl(228, 12%, 48%);
+}
+.price{
+  display: flex;
+  align-items: center;
+}
+.c-price{
+  font-family:'Fraunces',  serif;
+  color: hsl(158, 36%, 37%);
+  font-size: 35px;
+  padding-right: 25px;
+}
+.f-price{
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.cta{
+  background:  hsl(158, 36%, 37%);
+  border: none;
+  padding: 14px 0;
+  border-radius: 12px;
+  color:White;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .3s ease;
+  width: 100%;
+}
+.cta img{
+  padding-right: 7px;
+}
+.cta:hover{
+    background:  hsl(158, 36%, 23%);
+}
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+@media only screen and (max-width:628px){
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .img img{
+    max-height: 450px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card{
+    display: block;
+  }
+  h6.preview,h1.name,p.description,.price{
+    padding-bottom:23px;
+  }
+}
+@media only screen and (max-width:375px){
+.BOX{
+  margin: 15px auto;
+  padding: 0 15px;
+}
+.img img{
+  max-height: 290px;
+}
+.card{
+  padding: 24px;
+}
+h6.preview,h1.name,p.description,.price{
+  padding-bottom:16px;
+}
+h1.name{
+  font-size: 28px;
+}
+p.description{
+  font-size: 12px;
+}
+p.c-price{
+  font-size:23px;
+}
+button.cta{
+  padding: 12px 0;
+  font-size: 13px;
+}
+}
